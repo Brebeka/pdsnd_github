@@ -167,7 +167,7 @@ def user_stats(df):
         gender = df['Gender'].value_counts()
         print('The counts of gender are:', gender)
     except KeyError:
-        print('Selected filter has has no data for gender. Please try other city.')
+        print('Selected filter has no data for gender. Please try other city.')
 
     # Display earliest, most recent, and most common year of birth
     #Try statement is added because not all files contained data for year of birth.
@@ -175,7 +175,7 @@ def user_stats(df):
         earliest_birth = int(df['Birth Year'].min())
         most_recent_birth = int(df['Birth Year'].max())
         most_common_birth = int(df['Birth Year'].mode()[0])
-        print('The earliest year of bith is {}, \n the most recent year of birth is {} ,\n and the most common year of birth is {}.'.format(earliest_birth, most_recent_birth,most_common_birth))
+        print('The earliest year of birth is {}, \n the most recent year of birth is {} ,\n and the most common year of birth is {}.'.format(earliest_birth, most_recent_birth,most_common_birth))
     except KeyError:
         print('Selected filter has has no data for year of birth. Please try other city.')
 
