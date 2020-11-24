@@ -29,7 +29,16 @@ earliest, most recent, most common year of birth (only available for NYC and Chi
 For Users request the program can also show raw data.
 
 ### Files used
-Include the files used
+bikeshare_data_rebeka.py
+chicago.csv
+new_york_city.csv
+washinton.csv
+
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+pandas official documentation on DataFrame 
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html?highlight=dataframe#pandas.DataFrame
+
+https://datatofish.com/concatenate-values-python/
+
+Udacity practice questions for the project and Udacity reviewers feedback helped me with final code structure.
