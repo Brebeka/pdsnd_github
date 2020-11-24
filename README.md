@@ -2,7 +2,7 @@
 24.11.2020
 
 ### Project Title
-Exploring US Bikeshare data -Udacity course project
+Exploring US Bikeshare data for Chicago New York City and Washington - Udacity course project for Python
 
 ### Description
 The project is about bike share use data in Chicago, New York City, and Washington. The program can filter for city name, month name and week day, and shows the following descriptive statistics for the selected filters:
@@ -36,7 +36,7 @@ washinton.csv
 
 
 ### Credits
-pandas official documentation on DataFrame 
+pandas official documentation on DataFrame
 https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html?highlight=dataframe#pandas.DataFrame
 
 https://datatofish.com/concatenate-values-python/
