@@ -27,7 +27,7 @@ def get_filters():
     # created an excluded month list when the user wants to ask data for months that are not in database.
     Month_list = ['all', 'january', 'february', 'march', 'april', 'may', 'june']
     Exluded_month_list = ['july', 'august', 'september', 'october', 'november', 'december']
-    month = input("Please select the month to filter by: if you don't want to filter please write all. " ).lower()
+    month = input("Please select the month  (e.g january) to filter by: if you don't want to filter please write all. " ).lower()
     while month not in Month_list:
         if month in Exluded_month_list:
             print('No data for this month. Please select from period: january-june.')
