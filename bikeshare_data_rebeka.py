@@ -190,7 +190,7 @@ def display_rawdata(df):
 
     view_data = input('Would you like to view 5 rows from the row data? Please write yes or no').lower()
     start_loc =0
-    while view_data == 'yes':
+    while view_data in ('yes', 'yep', 'yeah', 'y', 'ja'):
         print(df.iloc[start_loc:start_loc+5])
         start_loc += 5
         view_data = input('Do you wish to continue to the next 5 rows?').lower()
