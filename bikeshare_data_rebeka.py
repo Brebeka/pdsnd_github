@@ -27,7 +27,7 @@ def get_filters():
     # created an excluded month list when the user wants to ask data for months that are not in database.
     Month_list = ['all', 'january', 'february', 'march', 'april', 'may', 'june']
     Exluded_month_list = ['july', 'august', 'september', 'october', 'november', 'december']
-    month = input("Please select the month to filter by: if you don't want to filter please write all. " ).lower()
+    month = input("Please select the month  (e.g january) to filter by: if you don't want to filter please write all. " ).lower()
     while month not in Month_list:
         if month in Exluded_month_list:
             print('No data for this month. Please select from period: january-june.')
@@ -37,7 +37,7 @@ def get_filters():
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
     Week_list = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday', 'all']
-    day = input("Please select the weekday to filter by: if you don't want to filter please write all. " ).lower()
+    day = input("Please select the weekday (e.g monday) to filter by: if you don't want to filter please write all. " ).lower()
     while day not in Week_list:
         print('Invalid week name. Please select a valid english week name e.g: monday.')
         day = input("Please select the week to filter by: if you don't want to filter please write all. " ).lower()
@@ -190,7 +190,7 @@ def display_rawdata(df):
 
     view_data = input('Would you like to view 5 rows from the row data? Please write yes or no').lower()
     start_loc =0
-    while view_data == 'yes':
+    while view_data in ('yes', 'yep', 'yeah', 'y', 'ja'):
         print(df.iloc[start_loc:start_loc+5])
         start_loc += 5
         view_data = input('Do you wish to continue to the next 5 rows?').lower()
